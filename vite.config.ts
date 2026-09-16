@@ -1,4 +1,5 @@
 import tailwindcss from '@tailwindcss/vite';
+import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
@@ -8,9 +9,18 @@ export default defineConfig({
 		sveltekit({
 			compilerOptions: {
 				runes: ({ filename }) =>
-					filename.split(/[/\\]/).includes('node_modules')
-						? undefined
-						: true
+					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
+			},
+
+			kit: {
+				adapter: adapter({
+					pages: 'build',
+					assets: 'build'
+				}),
+
+				paths: {
+					base: '/studio'
+				}
 			}
 		})
 	]

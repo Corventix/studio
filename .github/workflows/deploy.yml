@@ -35,7 +35,12 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build
-        run: bun run build
+        run: |
+          bun run build
+          echo "=== Build output ==="
+          ls -la
+          echo "=== Build directory ==="
+          ls -la build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

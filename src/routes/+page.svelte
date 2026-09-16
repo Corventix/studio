@@ -1,5 +1,6 @@
 <script lang="ts">
 	import './layout.css';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
 						</p>
 						<div class="mt-8 flex flex-wrap items-center gap-4">
 							<a
-								href="/quote"
+								href={`${base}/quote`}
 								class="inline-flex items-center rounded-md bg-[#183c34] px-6 py-3 text-base font-medium text-[#f7f3ee] transition hover:bg-[#123029]"
 							>
 								Get a free site review
@@ -334,7 +335,7 @@
 					</p>
 				</div>
 				<a
-					href="/quote"
+					href={`${base}/quote`}
 					class="inline-flex w-fit items-center justify-center rounded-md bg-[#183c34] px-6 py-3 text-base font-medium text-[#f7f3ee] transition hover:bg-[#123029]"
 				>
 					Get a quote
@@ -396,7 +397,7 @@
 					Tell me about your business — I’ll take a look and tell you honestly what would help most.
 				</p>
 				<a
-					href="/quote"
+					href={`${base}/quote`}
 					class="mt-8 inline-flex items-center rounded-md bg-[#f7f3ee] px-6 py-3 text-base font-medium text-[#183c34] transition hover:bg-[#efe4d3]"
 				>
 					Get a free site review
