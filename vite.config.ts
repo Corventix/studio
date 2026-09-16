@@ -6,21 +6,20 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [
 		tailwindcss(),
+
 		sveltekit({
+			adapter: adapter({
+				pages: 'build',
+				assets: 'build'
+			}),
+
+			paths: {
+				base: '/studio'
+			},
+
 			compilerOptions: {
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
-			},
-
-			kit: {
-				adapter: adapter({
-					pages: 'build',
-					assets: 'build'
-				}),
-
-				paths: {
-					base: '/studio'
-				}
 			}
 		})
 	]
