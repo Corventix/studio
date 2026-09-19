@@ -10,6 +10,11 @@
 		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
 		rel="stylesheet"
 	/>
+	<title>Corventix Studio — Websites for Growing Businesses</title>
+	<meta
+		name="description"
+		content="Corventix Studio builds fast, custom websites for growing businesses."
+	/>
 </svelte:head>
 
 <div class="min-h-screen bg-[#f7f3ee] text-[#1d2d29]">
