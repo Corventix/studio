@@ -10,6 +10,7 @@
 		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
 		rel="stylesheet"
 	/>
+	<meta name="google-site-verification" content="AX3ZC9PG1DHsbDP3mMOl0AFY51s0ZUnWM8_Rxne5AZw" />
 	<title>Corventix Studio — Websites for Growing Businesses</title>
 	<meta
 		name="description"
